@@ -19,6 +19,11 @@
             box-sizing: border-box;
         }
         
+        html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             color: var(--dark-text);
@@ -655,9 +660,9 @@
         }
         
         .footer-container {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 3rem;
+               display: grid;
+               grid-template-columns: 2fr 2fr;
+               gap: 15rem;
         }
         
         .footer-about p {
@@ -763,7 +768,35 @@
             margin-top: 1rem;
             text-align: center;
         }
-        
+        /* Generic Info Sections */
+.info-section {
+  padding: 70px 0;
+}
+
+.info-section.alt-bg {
+  background: #f8f9fb;
+}
+
+.coverage-grid,
+.pricing-points,
+.assurance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.coverage-item,
+.price-card,
+.assurance-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
         /* Responsive Styles */
         @media (max-width: 1024px) {
             .hero-container {
